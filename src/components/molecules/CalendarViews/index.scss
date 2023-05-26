@@ -1,0 +1,31 @@
+/* stylelint-disable declaration-property-value-disallowed-list */
+.m-viewers {
+    @include adjust-flex(flex-start, center);
+    width: max-content;
+    overflow: hidden;
+    background: transparent;
+    border: rem(1) solid $goldenrod;
+    border-radius: rem(30);
+
+
+    &_item {
+        padding: rem(8) rem(14.5);
+        min-width: rem(80);
+        width: max-content;
+        cursor: pointer;
+        border-left: rem(1) solid $goldenrod;
+
+        &:first-child {
+            border: none;
+        }
+    }
+
+    .active {
+        background-color: $goldenrod;
+        box-shadow: inset 0 rem(3) rem(4) $black-025;
+
+        .a-typography {
+            color: $white;    
+        }
+    }
+}

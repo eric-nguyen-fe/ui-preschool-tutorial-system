@@ -1,0 +1,108 @@
+.p-table {
+    &_admin {
+        padding: rem(45) rem(32);
+
+        .ant-table-content {
+            .ant-table-thead {
+                tr {
+                    th {
+                        background-color: $deep-champagne !important;
+                        text-align: center !important;
+                        @include font-base(18,23);
+                        font-weight: 700;
+
+                        &::before {
+                            width: 0 !important;
+                        }
+                    }
+                }
+            }
+
+            .ant-table-tbody {
+                tr {
+                    td {
+                        text-align: center !important;
+                        @include font-base(16,21);
+                        color: $black-olive;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .ant-pagination-item-active {
+            background: $goldenrod !important;
+            border: unset;
+
+            a {
+                color: $black-olive !important;
+            }
+        }
+
+        &-info {
+            padding-bottom: rem(32);
+            @include adjust-flex(space-between,center);
+        }
+
+        &_tab {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+
+            li {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 27px;
+                cursor: pointer;
+
+                &:first-child {
+                    margin-right: rem(12);
+                    color: #949ca9;
+                }
+
+                &:last-child {
+                    border-bottom: 2px solid $goldenrod;
+                }
+            }
+        }
+
+        
+
+        &-search {
+            @include adjust-flex(center,center);
+
+            .a-input_error {
+                display: none !important;
+            }
+
+            .a-button-h36 {
+                padding: rem(12);
+                max-width: rem(185);
+                margin-left: rem(20);
+                height: rem(48);
+            }
+        }
+
+        .tableTextoption {
+            position: relative;
+        }
+
+        .tableIconoption {
+            position: absolute;
+            top: -50%;
+            right: 10%;
+            padding: rem(10);
+            cursor: pointer;
+            border-radius: 50%;
+
+            &:hover {
+                background: $goldenrod;
+            }
+        }
+
+        td {
+            font-weight: 400 !important;
+        }
+    }
+
+}

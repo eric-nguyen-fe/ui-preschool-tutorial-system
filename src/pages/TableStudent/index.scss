@@ -1,0 +1,18 @@
+.header_popup {
+    height: 58px;
+    background-color: $goldenrod;
+    width: 100%;
+    position: relative;
+    z-index: 200;
+
+    .a-typography {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: $white;
+    }
+}

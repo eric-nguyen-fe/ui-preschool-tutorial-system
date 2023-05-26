@@ -1,0 +1,45 @@
+.o-popupStudent {
+    &_title {
+        width: 100%;
+        background: $goldenrod;
+        padding: rem(16) 0;
+    }
+
+    form {
+        padding: rem(24) 0;
+    }
+
+    &_form {
+        padding: 0 rem(28) 0;
+        @include adjust-flex(space-between,center);
+    
+        &-left {
+            width: 49%;
+        }
+    
+        &-right {
+            width: 49%;
+
+           
+        }
+
+        &-text {
+            margin-bottom: rem(19);
+    
+            .a-typography {
+                padding: rem(8) rem(16);
+                background: $alice-blue;
+                border-radius: rem(6);
+            }
+        }
+    }
+
+
+   
+}
+
+.o-booking_btn {
+    padding: rem(0) rem(28);
+    margin-top: rem(48);
+} 
+

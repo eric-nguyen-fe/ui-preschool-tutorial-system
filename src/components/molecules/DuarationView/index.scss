@@ -1,0 +1,28 @@
+.m-duaration {
+    @include adjust-flex(space-between, center);
+    width: fit-content;
+    overflow: hidden;
+    max-height: rem(40);
+    background: transparent;
+    border: rem(1) solid $goldenrod;
+    border-radius: rem(30);
+
+    &_btn {
+        height: 100%;
+        padding: 100vw rem(0);
+        cursor: pointer;
+
+        .a-icon {
+            padding: rem(7) rem(18)rem(8);
+        }
+    }
+
+    .a-typography {
+        padding: rem(6) rem(12);
+        width: max-content;
+
+
+    }
+
+
+}
